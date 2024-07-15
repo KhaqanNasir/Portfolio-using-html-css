@@ -43,7 +43,7 @@
 }
 .navbar{
     width: 100%;
-    height: 100px;
+    height: 90px;
     background-color: whitesmoke;
     border-radius: 50px;
     margin-top: 20px;
@@ -97,7 +97,7 @@
     font-size: 20px;
     transition: 2s ease-in-out;
     animation: hmhelo  ease-in-out both;
-    animation-timeline: view()
+    animation-timeline: view();
 }
 @keyframes hmhelo {
     from{
@@ -112,40 +112,37 @@
 #homep2{
     color: whitesmoke;
     font-size: 70px;
-    transition: 2s ease-in-out;
+    transition: 3s ease-in-out;
     animation: hmname ease-in-out both;
-    animation-timeline: view()
+    animation-timeline: view();
+    animation-range: cover -50%;
 }
 @keyframes hmname {
     from{
         opacity: 0;
-        visibility: hidden;
-        margin-left: -100px;
+        margin-left: -150px;
     }
     to{
         opacity: 1;
-        visibility:visible;
     }
 }
 #homep3{
     color: whitesmoke;
     font-size: 20px;
     transition: 3s ease-in-out;
-    animation: hmp3 3s ease-in-out both;
+    animation: hmp3 ease-in-out both;
     animation-timeline: view();
+    animation-range: cover -50%;
    }
    @keyframes hmp3 {
     from{
         opacity: 0;
-        visibility: hidden;
-        margin-top: -50px;
+        margin-top: -100px;
     }
     to{
         opacity: 1;
-        visibility:visible;
     }
    }
-
 #homebtn{
     color: whitesmoke;
     text-decoration: none;
@@ -156,23 +153,21 @@
     border-bottom: 2px solid whitesmoke;
     border-top: 2px solid whitesmoke;
     background-color: rgba(44, 192, 192, 0.884);
-    transition: 3s ease-in-out;
- animation: hmbtn 3s ease-in-out both;
+    transition: 2s ease-in-out;
+ animation: hmbtn ease-in-out both;
  animation-timeline: view();
+ animation-range: cover -50%;
 }
 @keyframes hmbtn {
  from{
      opacity: 0;
-     visibility: hidden;
-     margin-left: -50px;
  }
  to{
      opacity: 1;
-     visibility:visible;
  }
 }
 #homebtn:hover{
-    transition: 0.5s ease-in-out;
+    transition: 0.3s ease-in-out;
  border-bottom: 2px solid #A56238;
  border-top: 2px solid #A56238;
  background-color: rgba(31, 124, 124, 0.884);
@@ -180,35 +175,33 @@
 .homediv2 img{
  padding-top: 100px;   
  height: 500px;
- transition: 3s ease-in-out;
- animation: hmimg 3s ease-in-out both;
+ transition: 2s ease-in-out;
+ animation: hmimg ease-in-out both;
  animation-timeline: view();
+ animation-range: cover -50%;
 }
 @keyframes hmimg {
  from{
      opacity: 0;
-     visibility: hidden;
-     margin-right: -300px;
+     margin-right: -700px;
  }
  to{
      opacity: 1;
-     visibility:visible;
  }
 }
 .icons{
-    transition: 2s ease-in-out;
+    transition: 3s ease-in-out;
     animation: hmicons ease-in-out both;
-    animation-timeline: view()
+    animation-timeline: view();
+    animation-range: cover -50%;
 }
 @keyframes hmicons {
     from{
         opacity: 0;
-        visibility: hidden;
         margin-bottom: 100px;
     }
     to{
-        opacity: 1;
-        visibility:visible;
+        opacity:1;
     }
 }
 
@@ -219,9 +212,6 @@
     transition: 0.3s ease-in-out;
     color: #A56238;
     transform: translateY(-4px);
-}
-.home{
-    height: 100%;
 }
 
 #abtp1{
@@ -237,17 +227,15 @@
     transition: 3s ease-in-out;
     animation: abtimg 3s ease-in-out both;
     animation-timeline: view();
-    animation-range: entry 0% cover 50%;
+    animation-range: cover -100%;
 }
 @keyframes abtimg {
     from{
         opacity: 0;
-        visibility: hidden;
-        margin-left: -100px;
+        margin-left: -500px;
     }
     to{
         opacity: 1;
-        visibility:visible;
     }
 }
 #abtp3{
@@ -264,19 +252,17 @@
     flex-wrap: wrap;
     display: inline-flex;
     transition: 3s ease-in-out;
-    animation: abt2 3s ease-in-out both;
+    animation: abt2 ease-in-out both;
     animation-timeline: view();
-    animation-range: entry 20% cover 50%;
+    animation-range: cover -200%;
    }
    @keyframes abt2 {
     from{
         opacity: 0;
-        visibility: hidden;
-        margin-top: 100px;
+        margin-left: 400px;
     }
     to{
         opacity: 1;
-        visibility:visible;
     }
    }
 .aboutdiv3 p{
@@ -294,7 +280,7 @@
 }
 #edup1{
     color: #A56238;
-    font-size: 70px;
+    font-size: 60px;
 }
 #p1{
     color: whitesmoke;
@@ -347,15 +333,15 @@ border-radius: 100%;
 }
 #cerp1{
     color: #A56238;
-    font-size: 70px;
+    font-size: 60px;
     text-align: center;
 }
 .cerdiv2{
     text-align: center;
 }
  .imag{
-    height: 600px;
-    border: 5px solid #A56238;
+    height: 500px;
+    border: 8px solid #A56238;
  }
  #imgp1{
     background-color: #A56238;
@@ -397,6 +383,7 @@ border-radius: 100%;
  }
  .card{
     margin-bottom: 40px;
+
  }
  .serdiv2{
     border: 4px solid #A56238;
@@ -445,3 +432,67 @@ border-radius: 100%;
 .condiv2 a{
     text-decoration: none;
 }
+    .loader {
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        position: relative;
+        border: 2px solid #A56238;
+        animation: loader 4s infinite ease;
+      }
+  
+      .loader-inner {
+        display: block;
+        width: 100%;
+        background-color: whitesmoke;
+        animation: loader-inner 2s infinite ease-in;
+      }
+  
+      .loader-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh; 
+        position: fixed; 
+        top: 0;
+        left: 0;
+        background-color: #211f1f;
+        z-index: 9999;
+      }
+  
+      @keyframes loader {
+        0% {
+          transform: rotate(0deg);
+        }
+        25% {
+          transform: rotate(180deg);
+        }
+        50% {
+          transform: rotate(180deg);
+        }
+        75% {
+          transform: rotate(360deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+  
+      @keyframes loader-inner {
+        0% {
+          height: 0%;
+        }
+        25% {
+          height: 0%;
+        }
+        50% {
+          height: 100%;
+        }
+        75% {
+          height: 100%;
+        }
+        100% {
+          height: 0%;
+        }
+      }
