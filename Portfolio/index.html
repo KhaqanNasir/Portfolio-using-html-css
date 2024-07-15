@@ -9,25 +9,27 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body class="bg-color">
-    <nav class="container-fluid navbar sticky-top">
+    <nav class="container-fluid navbar fixed-top">
            <div class="container col-12">
               <div class="row">
-                  <div class="logo col-lg-5">
+                  <div class="logo col-lg-5 col-md-4 col-12 col-xl-5">
                     <p1 id="navp1">Khaqan</p1>
                     <p2 id="navp2">Nasir</p2>
                   </div>
-                  <div class="tags col-lg-7">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Certificates</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
+                  <div class="tags col-lg-7 col-lg-7 col-md-9 col-12 col-xl-7">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                   </div>
               </div>
            </div>
     </nav>
-
+    <p id="home"></p>
+    <br><br>
+    <br><br><br><br><br><br><br><br>
     <div class="home container gen-animation">
           <div class="row">
             <div class="homediv1 col-lg-6 col-md-6 col-12 col-xl-6">
@@ -35,7 +37,7 @@
                 <p id="homep2">Khaqan Nasir</p>
                 <p id="homep3">Bachelor's student in Computer Science at COMSATS University Islamabad Sahiwal Campus, passionate about .NET development</p>
                 <br>
-                <a id="homebtn" href="#">Download CV</a>
+                <a id="homebtn" href="#" download target="_blank"><img src="/img/download.png"> Download CV</a>
                 <br><br><br>
                 <div class="icons">
                     <a href="https://www.linkedin.com/in/khaqan-nasir/" target="_blank"><img src="/img/Linkedin.png"></a>
@@ -49,6 +51,7 @@
             </div>
           </div>
     </div>
+    <p id="about"></p>
     <br><br><br><br><br><br><br><br>
 
     <div class="container about gen-animation">
@@ -74,7 +77,8 @@
         </div>
       </div>
     </div>
-
+     
+    <p id="portfolio"></p>
     <br><br><br><br><br><br><br><br>
 
     <div class="container portfolio my-3 gen-animation">
@@ -149,63 +153,63 @@
          <div class="bars col-lg-8 col-md-8 col-8 col-xl-8">
           <p class="skillP">HTML <img src="/img/html.png"></p>
           <div class="progress">
-            <div class="progressbar" style="width: 90%;">
+            <div class="progressbar progress-bar-striped progress-bar-animated" style="width: 90%;">
               90%
             </div>
           </div>
 
           <p class="skillP">CSS <img src="/img/css.png"></p>
           <div class="progress ">
-            <div class="progressbar" style="width: 80%;">
+            <div class="progressbar progress-bar-striped progress-bar-animated" style="width: 80%;">
               80%
             </div>
           </div>
 
           <p class="skillP">JavaScript <img src="/img/javascript.png"></p>
           <div class="progress ">
-            <div class="progressbar" style="width: 70%;">
+            <div class="progressbar progress-bar-striped progress-bar-animated" style="width: 70%;">
               70%
             </div>
           </div>
 
           <p class="skillP">Bootstrap <img src="/img/bootstrap.png"></p>
           <div class="progress ">
-            <div class="progressbar" style="width: 90%;">
+            <div class="progressbar progress-bar-striped progress-bar-animated" style="width: 90%;">
               90%
             </div>
           </div>
 
           <p class="skillP">Git <img src="/img/git.png"></p>
           <div class="progress">
-            <div class="progressbar" style="width: 100%;">
+            <div class="progressbar progress-bar-striped progress-bar-animated" style="width: 100%;">
               100%
             </div>
           </div>
 
           <p class="skillP">C Sharp <img src="/img/csharp.png"></p>
           <div class="progress ">
-            <div class="progressbar" style="width: 80%;">
+            <div class="progressbar progress-bar-striped progress-bar-animated" style="width: 80%;">
               80%
             </div>
           </div>
 
           <p class="skillP">MySQL <img src="/img/mysql.png"></p>
           <div class="progress ">
-            <div class="progressbar" style="width: 90%;">
+            <div class="progressbar progress-bar-striped progress-bar-animated" style="width: 90%;">
               90%
             </div>
           </div>
 
           <p class="skillP">.NET <img src="/img/dotnet.png"></p>
           <div class="progress ">
-            <div class="progressbar" style="width: 85%;">
+            <div class="progressbar progress-bar-striped progress-bar-animated" style="width: 85%;">
               85%
             </div>
           </div>
          </div>
       </div>
     </div>
-
+    <p id="certificates"></p>
     <br><br><br><br><br><br><br><br>
 
     <div class="container Certificates gen-animation">
@@ -260,6 +264,78 @@
        </div>
       </div>
     </div>
+    <p id="project"></p>
+    <br><br><br><br><br><br><br><br>
+    <div class="container projects gen-animation">
+      <div class="row">
+        <div class="projectdiv1 col-12">
+          <p id="cerp1">Projects</p>
+        </div>
+
+        <div class="projectdiv2 row">
+          <div class="card col-xl-5 col-lg-5 col-md-5 col-sm-12">
+            <img src="/img/dotnetcore.png" class="card-img-top">
+            <div class="card-body">
+              <h3 class="card-text">CGPA</h3>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+
+          <div class="card col-xl-5 col-lg-5 col-md-5 col-sm-12">
+            <img src="/img/dotnetcore.png" class="card-img-top">
+            <div class="card-body">
+              <h3 class="card-text">CGPA</h3>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+
+          <div class="card col-xl-5 col-lg-5 col-md-5 col-sm-12">
+            <img src="/img/dotnetcore.png" class="card-img-top">
+            <div class="card-body">
+              <h3 class="card-text">CGPA</h3>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+
+          <div class="card col-xl-5 col-lg-5 col-md-5 col-sm-12">
+            <img src="/img/dotnetcore.png" class="card-img-top">
+            <div class="card-body">
+              <h3 class="card-text">CGPA</h3>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          
+        </div>
+
+      </div>
+    </div>
+    <br><br><br><br><br><br><br><br>
+ 
+    <div class="container services gen-animation">
+      <div class="row">
+        <div class="serdiv1 col-12">
+          <p id="cerp1">Services</p>
+        </div>
+        <div class="serdiv2 col-12">
+          <p id="serp1">.NET Web Development</p>
+          <img src="/img/certificates.png">
+          <p id="serp2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum pariatur necessitatibus distinctio deleniti. Voluptatibus quia libero sint magnam dolor possimus, error animi reprehenderit magni numquam dolores molestiae obcaecati blanditiis laboriosam.</p>
+        </div>
+      </div>
+    </div>
+    <br><br><br><br><br><br><br><br>
+    <p id="contact"></p>
+    <div class="container contact gen-animation">
+      <div class="row">
+        <div class="condiv1 col-12">
+          <p id="cerp1">Contact</p>
+        </div>
+        <div class="condiv2">
+           <p id="conp1">Enjoyed my work or interested in learning more about me?</p>
+           <a id="conbtn" href="mailto:khaqannasir01@gmail.com" target="_blank"><img src="/img//email.png"> Hire me</a>
+        </div>
+      </div>
+    </div>
 
     <br><br><br><br><br><br><br><br>
     <hr>
@@ -270,6 +346,7 @@
         <p id="footp1">Copyright &copy; 2024 All rights reserved |&nbsp;</p>
       <p id="footp2">Muhammad Khaqan Nasir</p>
       </div>
+
     </div>
    </div>
 <!-- jQuery -->

@@ -3,7 +3,7 @@
     padding: 0;
     font-family: 'Trebuchet MS';
 }
-.gen-animation{
+ .gen-animation{
     animation: general ease-in-out both;
     animation-timeline: view();
     animation-range: entry 50% cover 50%;
@@ -18,13 +18,16 @@
         transform: translateY(0px);
     }
     
-}
-@media screen and (max-width:790px) {
+} 
+@media screen and (max-width: 770px) {
     *{
         text-align: center;
     }
     .navbar{
-        width: 100%;
+        width:max-content ;
+    }
+    .tags li{
+        text-align: left;
     }
 }
 ::-webkit-scrollbar{
@@ -32,19 +35,18 @@
 }
 ::-webkit-scrollbar-track{
     background-color: whitesmoke;
+    border-radius: 20px;
 }
 ::-webkit-scrollbar-thumb{
+   border-radius: 20px;
     background-color: #A56238;
 }
 .navbar{
-    width: 100vw;
-    height: 90px;
+    width: 100%;
+    height: 100px;
     background-color: whitesmoke;
-    border: none;
     border-radius: 50px;
-    margin: 20px;
-    position: sticky;
-    top: 0;
+    margin-top: 20px;
 }
 .bg-color{
  background-color: #211f1f;
@@ -74,6 +76,11 @@
     text-decoration: none;
     color: #211f1f;
 }
+.tags li a:hover{
+    transition: 0.3s ease-in-out;
+    color: #A56238;
+    transform: translateY(-4px);
+}
 .tags li{
     display:inline-flex;
     justify-content: center;
@@ -88,34 +95,130 @@
 #homep1{
     color: #A56238;
     font-size: 20px;
+    transition: 2s ease-in-out;
+    animation: hmhelo  ease-in-out both;
+    animation-timeline: view()
+}
+@keyframes hmhelo {
+    from{
+        opacity: 0;
+        visibility: hidden;
+    }
+    to{
+        opacity: 1;
+        visibility:visible;
+    }
 }
 #homep2{
     color: whitesmoke;
     font-size: 70px;
+    transition: 2s ease-in-out;
+    animation: hmname ease-in-out both;
+    animation-timeline: view()
+}
+@keyframes hmname {
+    from{
+        opacity: 0;
+        visibility: hidden;
+        margin-left: -100px;
+    }
+    to{
+        opacity: 1;
+        visibility:visible;
+    }
 }
 #homep3{
     color: whitesmoke;
     font-size: 20px;
-}
+    transition: 3s ease-in-out;
+    animation: hmp3 3s ease-in-out both;
+    animation-timeline: view();
+   }
+   @keyframes hmp3 {
+    from{
+        opacity: 0;
+        visibility: hidden;
+        margin-top: -50px;
+    }
+    to{
+        opacity: 1;
+        visibility:visible;
+    }
+   }
+
 #homebtn{
-    text-decoration: none;
     color: whitesmoke;
-    background: transparent;
-    border: 2px solid whitesmoke;
-    padding: 10px;
-    font-size: 20px;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 10px 20px;
     border-radius: 30px;
+    cursor: pointer;
+    border-bottom: 2px solid whitesmoke;
+    border-top: 2px solid whitesmoke;
+    background-color: rgba(44, 192, 192, 0.884);
+    transition: 3s ease-in-out;
+ animation: hmbtn 3s ease-in-out both;
+ animation-timeline: view();
+}
+@keyframes hmbtn {
+ from{
+     opacity: 0;
+     visibility: hidden;
+     margin-left: -50px;
+ }
+ to{
+     opacity: 1;
+     visibility:visible;
+ }
 }
 #homebtn:hover{
-    color: #211f1f;
-    background-color: #A56238;
+    transition: 0.5s ease-in-out;
+ border-bottom: 2px solid #A56238;
+ border-top: 2px solid #A56238;
+ background-color: rgba(31, 124, 124, 0.884);
 }
 .homediv2 img{
  padding-top: 100px;   
  height: 500px;
+ transition: 3s ease-in-out;
+ animation: hmimg 3s ease-in-out both;
+ animation-timeline: view();
 }
+@keyframes hmimg {
+ from{
+     opacity: 0;
+     visibility: hidden;
+     margin-right: -300px;
+ }
+ to{
+     opacity: 1;
+     visibility:visible;
+ }
+}
+.icons{
+    transition: 2s ease-in-out;
+    animation: hmicons ease-in-out both;
+    animation-timeline: view()
+}
+@keyframes hmicons {
+    from{
+        opacity: 0;
+        visibility: hidden;
+        margin-bottom: 100px;
+    }
+    to{
+        opacity: 1;
+        visibility:visible;
+    }
+}
+
 .icons a{
     margin-right: 10px;
+}
+.icons a img:hover{
+    transition: 0.3s ease-in-out;
+    color: #A56238;
+    transform: translateY(-4px);
 }
 .home{
     height: 100%;
@@ -131,6 +234,21 @@
 }
 .aboutdiv1 img{
     height: 350px;
+    transition: 3s ease-in-out;
+    animation: abtimg 3s ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+}
+@keyframes abtimg {
+    from{
+        opacity: 0;
+        visibility: hidden;
+        margin-left: -100px;
+    }
+    to{
+        opacity: 1;
+        visibility:visible;
+    }
 }
 #abtp3{
     color: whitesmoke;
@@ -140,11 +258,27 @@
     color: whitesmoke;
     font-size: 16px;
 }
+
 .aboutdiv3{
     width: 320px;
     flex-wrap: wrap;
     display: inline-flex;
-}
+    transition: 3s ease-in-out;
+    animation: abt2 3s ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 50%;
+   }
+   @keyframes abt2 {
+    from{
+        opacity: 0;
+        visibility: hidden;
+        margin-top: 100px;
+    }
+    to{
+        opacity: 1;
+        visibility:visible;
+    }
+   }
 .aboutdiv3 p{
     text-align: end;
 }
@@ -257,3 +391,57 @@ border-radius: 100%;
     display: inline-flex;
     justify-content: center;
  }
+ .projectdiv2{
+    display: flex;
+    justify-content: space-between;
+ }
+ .card{
+    margin-bottom: 40px;
+ }
+ .serdiv2{
+    border: 4px solid #A56238;
+    color: whitesmoke;
+    text-align: center;
+    display:inline-block;
+    padding: 10px;
+    border-radius: 50px;
+ }
+ #serp2{
+    font-size: 18px;
+ }
+ #serp1{
+    font-size: 26px;
+    font-weight: 700;
+ }
+ .serdiv2 img{
+    border-radius: 50%;
+    border: 3px solid #A56238;
+    padding: 20px;
+   margin-bottom: 10px;
+ }
+ #conp1{
+    color: whitesmoke;
+    font-size: 20px;
+ }
+#conbtn{
+    color: whitesmoke;
+    font-size: 24px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    border-bottom: 2px solid whitesmoke;
+    border-top: 2px solid whitesmoke;
+    background-color: rgba(44, 192, 192, 0.884);
+}
+#conbtn:hover{
+ transition: 0.5s ease-in-out;
+ border-bottom: 2px solid #A56238;
+ border-top: 2px solid #A56238;
+ background-color: rgba(31, 124, 124, 0.884);
+}
+.condiv2{
+    text-align: center;
+}
+.condiv2 a{
+    text-decoration: none;
+}
