@@ -10,25 +10,19 @@
 }
 @keyframes general {
     from{
-        opacity: 0;
-        transform: translateY(100px);
+        opacity: -2;
+        transform: translateY(50px);
     }
     to{
         opacity: 1;
-        transform: translateY(0px);
     }
     
 } 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 991px) {
     *{
         text-align: center;
     }
-    .navbar{
-        width:max-content ;
-    }
-    .tags li{
-        text-align: left;
-    }
+
 }
 ::-webkit-scrollbar{
     width: 10px;
@@ -41,53 +35,49 @@
    border-radius: 20px;
     background-color: #A56238;
 }
-.navbar{
-    width: 100%;
-    height: 90px;
-    background-color: whitesmoke;
+.navbar {
+    background-color: #5d5555ae;
     border-radius: 50px;
     margin-top: 20px;
 }
-.bg-color{
- background-color: #211f1f;
+
+.bg-color {
+    background-color: #211f1f;
 }
-#navp1{
+
+#navp1 {
     color: #A56238;
     font-size: 32px;
-    font-weight: 1000;
-    display: inline-flex;
-    justify-content: start;
-    align-items: center;
+    font-weight: 600;
 }
-#navp2{
-    font-size: 32px;
-    color: #211f1f;
-    font-weight: 1000;
-    display: inline-flex;
-    justify-content: start;
-    align-items: center;
-}
-.tags{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.tags li a{
+
+.tags li a {
     text-decoration: none;
-    color: #211f1f;
+    color: whitesmoke
 }
-.tags li a:hover{
+
+.tags li a:hover {
     transition: 0.3s ease-in-out;
     color: #A56238;
     transform: translateY(-4px);
 }
-.tags li{
-    display:inline-flex;
-    justify-content: center;
-    align-items: center;
+
+.tags li a:active {
+    color: #A56238;
+    transform: translateY(-4px);
+}
+
+.tags li {
     margin-left: 40px;
     font-size: 20px;
     font-weight: 500;
+}
+
+@media (max-width: 991px) {
+    .sidebar {
+        background-color: #3b3232;
+        backdrop-filter: blur(10px);
+    }
 }
 .homediv1{
     padding-top: 100px;
@@ -98,29 +88,28 @@
     transition: 2s ease-in-out;
     animation: hmhelo  ease-in-out both;
     animation-timeline: view();
+    animation-range: cover 10%;
 }
 @keyframes hmhelo {
     from{
-        opacity: 0;
-        visibility: hidden;
+        opacity: -2;
     }
     to{
         opacity: 1;
-        visibility:visible;
     }
 }
 #homep2{
     color: whitesmoke;
     font-size: 70px;
-    transition: 3s ease-in-out;
+    transition: 1s ease-in-out;
     animation: hmname ease-in-out both;
     animation-timeline: view();
     animation-range: cover -50%;
 }
 @keyframes hmname {
     from{
-        opacity: 0;
-        margin-left: -150px;
+        opacity: -2;
+        margin-left: -100px;
     }
     to{
         opacity: 1;
@@ -129,14 +118,14 @@
 #homep3{
     color: whitesmoke;
     font-size: 20px;
-    transition: 3s ease-in-out;
+    transition: 1s ease-in-out;
     animation: hmp3 ease-in-out both;
     animation-timeline: view();
-    animation-range: cover -50%;
+    animation-range: cover -60%;
    }
    @keyframes hmp3 {
     from{
-        opacity: 0;
+        opacity: -2;
         margin-top: -100px;
     }
     to{
@@ -153,14 +142,14 @@
     border-bottom: 2px solid whitesmoke;
     border-top: 2px solid whitesmoke;
     background-color: rgba(44, 192, 192, 0.884);
-    transition: 2s ease-in-out;
+    transition: 1s ease-in-out;
  animation: hmbtn ease-in-out both;
  animation-timeline: view();
  animation-range: cover -50%;
 }
 @keyframes hmbtn {
  from{
-     opacity: 0;
+     opacity: -2;
  }
  to{
      opacity: 1;
@@ -178,26 +167,26 @@
  transition: 2s ease-in-out;
  animation: hmimg ease-in-out both;
  animation-timeline: view();
- animation-range: cover -50%;
+ animation-range: cover -120%;
 }
 @keyframes hmimg {
  from{
-     opacity: 0;
-     margin-right: -700px;
+     opacity: -2;
+     margin-right: -1000px;
  }
  to{
      opacity: 1;
  }
 }
 .icons{
-    transition: 3s ease-in-out;
+    transition: 1s ease-in-out;
     animation: hmicons ease-in-out both;
     animation-timeline: view();
-    animation-range: cover -50%;
+    animation-range: cover -120%;
 }
 @keyframes hmicons {
     from{
-        opacity: 0;
+        opacity: -2;
         margin-bottom: 100px;
     }
     to{
@@ -213,6 +202,10 @@
     color: #A56238;
     transform: translateY(-4px);
 }
+.icons a img:active{
+    color: #A56238;
+    transform: translateY(-4px);
+}
 
 #abtp1{
     color: #A56238;
@@ -224,14 +217,14 @@
 }
 .aboutdiv1 img{
     height: 350px;
-    transition: 3s ease-in-out;
-    animation: abtimg 3s ease-in-out both;
+    transition: 1s ease-in-out;
+    animation: abtimg ease-in-out both;
     animation-timeline: view();
-    animation-range: cover -100%;
+    animation-range: cover -130%;
 }
 @keyframes abtimg {
     from{
-        opacity: 0;
+        opacity: -2;
         margin-left: -500px;
     }
     to{
@@ -335,6 +328,19 @@ border-radius: 100%;
     color: #A56238;
     font-size: 60px;
     text-align: center;
+    transition: 2s ease-in-out;
+    animation: text ease-in-out both;
+    animation-timeline: view();
+    animation-range: cover -80%;
+}
+@keyframes text {
+    from{
+        opacity: -2;
+        margin-left: -500px;
+    }
+    to{
+        opacity: 1;
+    }
 }
 .cerdiv2{
     text-align: center;
@@ -346,13 +352,13 @@ border-radius: 100%;
  #imgp1{
     background-color: #A56238;
     color: whitesmoke;
-    font-size: 30px;
+    font-size: 18px;
     display: inline-flex
  }
  #imgp2{
     background-color: #A56238;
     color: whitesmoke;
-    font-size: 24px;
+    font-size: 14px;
     display: block;
  }
  #footimg{
